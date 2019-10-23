@@ -23,8 +23,8 @@ function checkCashRegister(price, cash, cid) {
       var cidInst;
   
       //set denomination arrays
-      var currencyAmt = [0.01, 0.05, 0.1, 0.25, 1, 5, 10, 20, 100]
-      var currencyUnit = ["PENNY", "NICKEL", "DIME", "QUARTER", "ONE", "FIVE", "TEN", "TWENTY", "ONE HUNDRED"]
+      var currencyAmt = [0.01, 0.05, 0.1, 0.25, 1, 5, 10, 20, 100];
+      var currencyUnit = ["PENNY", "NICKEL", "DIME", "QUARTER", "ONE", "FIVE", "TEN", "TWENTY", "ONE HUNDRED"];
   
         //loop through each value in CID, from largest to smallest, paralell to denomination
         //subtract the ammount from the change owed to customer. Use a counter to keep track
@@ -55,8 +55,6 @@ function checkCashRegister(price, cash, cid) {
         remainder = Number(change.toFixed(2)); 
         changeObj.change.push(["PENNY", remainder]);
       }
-      console.log(changeObj.status);
-      console.log(changeObj.change);
       return changeObj;
     }
   }

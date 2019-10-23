@@ -5,7 +5,7 @@ function rot13(str) { // LBH QVQ VG! YOU DID IT! :)
 
     //create new array for decoded letters
     var decode = [];
-    var decodeIndex
+    var decodeIndex;
 
     //loop through each in the array , find the index of the existing letter in the  
     // alphabet, and add 13. If the index does not exist (nonalphabetical), then push that
@@ -16,7 +16,7 @@ function rot13(str) { // LBH QVQ VG! YOU DID IT! :)
         if(decodeIndex == -1) {
           decode.push(str[i]);
         }else{
-          decodeIndex += 13
+          decodeIndex += 13;
           decode.push(letters[decodeIndex]);
         }
     }

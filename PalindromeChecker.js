@@ -8,11 +8,11 @@ function palindrome(str) {
     
     //repeat process for second string which we will use to test
     var reverseString = str.replace(/[^a-z0-9]*/gi, '');
-    reverseString = reverseString.toLowerCase()
+    reverseString = reverseString.toLowerCase();
   
     //reverse the string
-    reverseString = reverseString.split('')
-    reverseString = reverseString.reverse()
+    reverseString = reverseString.split('');
+    reverseString = reverseString.reverse();
     reverseString = reverseString.join('');
   
   
